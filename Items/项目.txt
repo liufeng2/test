@@ -1,0 +1,43 @@
+文件夹 ：
+
+children ：需要加载的php文件
+
+
+文件名： 
+
+header.php ：头部名
+
+main.php : 主页主体名
+
+footer.php ： 页脚名
+
+information.php : 资讯主页
+
+introHrader.php :公司简介的头部
+
+introMain.php ：公司简介主体
+
+introTeam1.php ：公司团队
+
+introJoin.php :  公司简介下的招聘页
+
+me.php : 关于我们（对公司大致的介绍）
+
+product.php : 产品列表
+
+shopping.php ： 购买页
+
+college.php : 学院主页
+
+
+加载页：php
+
+homepage.php : 加载首页
+
+store.php : 加载产品页
+
+me.php : 加载关于我们页
+
+company.php ： 加载资讯的主页
+
+information.php : 加载资讯主页

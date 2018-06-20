@@ -100,6 +100,7 @@
 			var sw = 0;
 			function timers(){
 				timer = setInterval(function (){
+					$(".mobile_carousel_ul").stop(true,true);
 					sw++;
 					if(sw > 4){
 						sw = 0;
@@ -115,9 +116,9 @@
 				timers()
 			});
 			
-			$(".mobile_carousel").children("li").on("swipeleft",function(){
+			/*$(".mobile_carousel").children("li").on("swipeleft",function(){
 			    alert("You swiped left!");
-			    /*var sw = $(this).index()+1;
+			    var sw = $(this).index()+1;
 			    if(sw > 4){
 			    	sw = 0;
 			    }
@@ -126,11 +127,11 @@
 				$(".mobile_carousel_ul").animate({
 					left:newLeft
 				})
-			});*/
+			});
 			
 			$(".mobile_carousel").on("swiperight",function(){
 			  	alert("You swiped right!");
-			  	/*var sw = $(this).index()-1;
+			  	var sw = $(this).index()-1;
 			  	if(sw = 0){
 			  		sw = 4;
 			  	}
@@ -138,8 +139,8 @@
 			    var newLeft = parseInt(-sw*bodyWidth)
 				$(".mobile_carousel_ul").animate({
 					left:newLeft
-				})*/
-			});
+				})
+			});*/
 		})
 		
 		

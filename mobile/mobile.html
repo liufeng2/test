@@ -88,7 +88,7 @@
 				/*$(".mobile_carousel_ul").stop(true,true);*/
 				$(this).addClass("on").siblings("span").removeClass("on");
 				var sw =$(this).index();
-				
+				sw++;
 				var bodyWidth = document.body.clientWidth;
 				var newLeft = parseInt(-sw*bodyWidth)
 				$(".mobile_carousel_ul").animate({
@@ -100,7 +100,6 @@
 			var sw = 0;
 			function timers(){
 				timer = setInterval(function (){
-					$(".mobile_carousel_ul").stop(true,true);
 					sw++;
 					if(sw > 4){
 						sw = 0;

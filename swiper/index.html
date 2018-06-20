@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Demo</title>
   <link rel="stylesheet" href="dist/idangerous.swiper.css">
+  <script type="text/javascript" src="js/jq_mobile.js"></script>
   <style>
 /* Demo Syles */
 body {
@@ -117,12 +118,21 @@ body {
 				},3000);
 			}
 			timers();
-			$(".device").mousedown(function(){
+			/*$(".device").mousedown(function(){
 					clearInterval(timer)
 			})
 			$(".device").mouseup(function(){
 				  timers();
-			})
+			})*/
+			
+			$("p").on("swipeleft",function(){
+			  alert("You swiped left!");
+			  clearInterval(timer);
+			});
+			$("p").on("swiperight",function(){
+			  alert("You swiped right!");
+			  clearInterval(timer);
+			});
   </script>
 </body>
 </html>

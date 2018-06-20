@@ -117,6 +117,12 @@ body {
 				},3000);
 			}
 			timers();
+			$(".device").mousedown(function(){
+					clearInterval(timer)
+			})
+			$(".device").mouseup(function(){
+				  timers();
+			})
   </script>
 </body>
 </html>

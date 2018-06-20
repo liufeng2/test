@@ -116,8 +116,8 @@
 			});
 			
 			$(".mobile_carousel_ul").children("li").on("swipeleft",function(){
-			   alert("You swiped left!");
-			    var sw = $(this).index()+1;
+			    alert("You swiped left!");
+			    /*var sw = $(this).index()+1;
 			    if(sw > 4){
 			    	sw = 0;
 			    }
@@ -126,11 +126,11 @@
 				$(".mobile_carousel_ul").animate({
 					left:newLeft
 				})
-			});
+			});*/
 			
 			$(".mobile_carousel_ul").children("li").on("swiperight",function(){
 			  	alert("You swiped right!");
-			  	var sw = $(this).index()-1;
+			  	/*var sw = $(this).index()-1;
 			  	if(sw = 0){
 			  		sw = 4;
 			  	}
@@ -138,7 +138,7 @@
 			    var newLeft = parseInt(-sw*bodyWidth)
 				$(".mobile_carousel_ul").animate({
 					left:newLeft
-				})
+				})*/
 			});
 		})
 		

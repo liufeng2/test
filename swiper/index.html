@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
 }
 .device {
-  width: 640px;
+  width: 100%px;
   height: 300px;
   margin: 0 auto;
   position: relative;
@@ -38,7 +38,7 @@ body {
 }
 .swiper-container {
   height: 300px;
-  width: 640px;
+  width: 100%;
 }
 .content-slide {
   padding: 20px;
@@ -68,6 +68,9 @@ body {
 }
 .swiper-active-switch {
   background: #fff;
+}
+.swiper-wrapper img{
+	width: 100%;
 }
   </style>
 </head>
@@ -110,7 +113,7 @@ body {
 				timer = setInterval(function (){
 				
 					$('.arrow-right').trigger("click")
-				},2500);
+				},3000);
 			}
 			timers();
   </script>

@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Demo</title>
   <link rel="stylesheet" href="dist/idangerous.swiper.css">
-  <script type="text/javascript" src="js/jq_mobile.js"></script>
   <style>
 /* Demo Syles */
 body {
@@ -14,7 +13,7 @@ body {
   line-height: 1.5;
 }
 .device {
-  width: 100%px;
+  width: 100%;
   height: 300px;
   margin: 0 auto;
   position: relative;
@@ -82,15 +81,16 @@ body {
     <a class="arrow-right" href="#"></a>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"> <img src="img/slider1-1.png"> </div>
+        <div class="swiper-slide" style="width: 100%;"> <img src="img/slider1-1.png"> </div>
         <div class="swiper-slide"> <img src="img/slider1-2.png"> </div>
         <div class="swiper-slide"> <img src="img/college.jpg"/></div>
       </div>
     </div>
     <div class="pagination"></div>
   </div>
-  <script src="js/jquery-1.10.1.min.js"></script>
+  <script src="js/jquery-1.10.1.min.js"></script> 
   <script src="dist/idangerous.swiper.min.js"></script>
+
   <script>
   	//轮播
 	  var mySwiper = new Swiper('.swiper-container',{
@@ -98,7 +98,8 @@ body {
 	    pagination: '.pagination',
 	    loop:true,
 	    grabCursor: true,
-	    paginationClickable: true
+	    paginationClickable: true,
+	    autoplay:3000
 	  })
 	  
 	  $('.arrow-left').on('click', function(e){
@@ -110,29 +111,7 @@ body {
 	    mySwiper.swipeNext()
 	  })
 	  
-	  var timer = null;
-			function timers(){
-				timer = setInterval(function (){
-				
-					$('.arrow-right').trigger("click")
-				},3000);
-			}
-			timers();
-			/*$(".device").mousedown(function(){
-					clearInterval(timer)
-			})
-			$(".device").mouseup(function(){
-				  timers();
-			})*/
-			
-			$("p").on("swipeleft",function(){
-			  alert("You swiped left!");
-			  clearInterval(timer);
-			});
-			$("p").on("swiperight",function(){
-			  alert("You swiped right!");
-			  clearInterval(timer);
-			});
+	  
   </script>
 </body>
 </html>
